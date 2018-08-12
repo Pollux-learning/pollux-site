@@ -9,7 +9,7 @@ header.masthead{
     background: #fff;
 }
 .device-mockup.iphone6_plus.portrait>.device>.screen, .device-mockup.iphone6_plus>.device>.screen{
-    top: 24.58%;
+    top: 37.58%;
 }
 header.masthead .header-content h1{
     color: #2f3542;
@@ -30,5 +30,12 @@ header.masthead .header-content h1{
 }
 
 #download h2,#download p {
+    color: #f1f2f6;
+}
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#contact{
     color: #f1f2f6;
 }
