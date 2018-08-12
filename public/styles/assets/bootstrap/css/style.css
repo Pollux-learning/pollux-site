@@ -1,0 +1,34 @@
+
+#mainNav{
+    background: #000;
+}
+#mainNav .navbar-brand{
+    color: #3D509D;
+}
+header.masthead{
+    background: #fff;
+}
+.device-mockup.iphone6_plus.portrait>.device>.screen, .device-mockup.iphone6_plus>.device>.screen{
+    top: 24.58%;
+}
+header.masthead .header-content h1{
+    color: #2f3542;
+}
+.bg-primary{
+    background: #000;
+}
+
+.btn{
+    background: #3D509D;
+}
+.btn:hover{
+    background: #9B3A7D;
+    border-color: #3D509D
+}
+.btn-outline-warning{
+    border-color: #3D509D;
+}
+
+#download h2,#download p {
+    color: #f1f2f6;
+}

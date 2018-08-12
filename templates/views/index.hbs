@@ -1,24 +1,135 @@
-{{!< default}}
-<div class="container">
-	<div class="jumbotron"><img src="/images/logo.svg" width="160">
-		<h1>Welcome</h1>
-		<p>This is your new <a href='http://keystonejs.com' target='_blank'>KeystoneJS</a> website.</p>
-		<p>
-			It includes the latest versions of
-			<a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
-			and <a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
-		</p>
-		<p>Visit the <a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to customise it.</p>
-		<hr>
-		<p>We have created a default Admin user for you with the email <strong>pablo.monestel@gmail.com</strong> and the password <strong></strong>.</p>
-		<p><a href="/keystone/signin" style="margin-right: 10px" class="btn btn-lg btn-primary">Sign in</a> to use the Admin UI.</p>
-		<hr>
-		<p>
-			Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
-			<a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
-		</p>
+{{!
+< default}} <div class="container">
+	<header class="masthead" style="height:100%;">
+		<div class="container h-100">
+			<div class="row h-100">
+				<div class="col-lg-7 my-auto">
+					<div class="mx-auto header-content">
+						<h1 class="mb-5" style="font-size:30px;">Géminis la constelación de la dualidad, para nosotros representa las ganas de aprender y el acceso al material. Pollux,
+							es la estrella más brillante de la constelación &nbsp;y nuestro deseo es ser ese material de calidad que alimente
+							tus ganas.</h1>
+						<a class="btn btn-outline-warning btn-xl js-scroll-trigger" role="button" href="#download">Ver tutoriales</a>
+					</div>
+				</div>
+				<div class="col-lg-5 my-auto">
+
+					<div class="device-mockup iphone6_plus portrait white">
+						<div class="device">
+							<div class="screen">
+								<img class="img-fluid" src="/styles/assets/img/pollux_logo.png">
+							</div>
+							<div class="button"></div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="download" class="download text-center bg-primary">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 mx-auto">
+					<h2 class="section-heading">¿Deseas aprender?</h2>
+					<p>Te brindamos tutoriales prácticos y sencillos de entender.</p>
+					<div class="badges"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="features" class="features">
+		<div class="container">
+			<div class="section-heading text-center">
+				<h2>Nuestros cursos</h2>
+				<p class="text-muted">Estamos constantemente subiendo tutoriales, como los que puedes ver acá</p>
+				<hr>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 my-auto">
+					<div class="device-container">
+						<div class="device-mockup iphone6_plus portrait white">
+							<div class="device">
+								<div class="screen">
+									<img class="img-fluid" src="/styles/assets/img/pollux_logo.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8 my-auto">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="feature-item">
+									<i class="fab fa-html5 text-primary"></i>
+									<h3>HTML</h3>
+									<p class="text-muted">Aprender a construir un sitio web nunca fue tan fácil</p>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="feature-item">
+									<i class="fab fa-css3-alt text-primary"></i>
+									<h3>CSS</h3>
+									<p class="text-muted">Para agregar un poco de sabor y color a nuestros sitios web</p>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="feature-item">
+									<i class="fab fa-js text-primary"></i>
+									<h3>JavaScript</h3>
+									<p class="text-muted">Digámosle a nuestro sitio que hacer y transformemóslo en una aplicación</p>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="feature-item">
+									<i class="fab fa-node-js text-primary"></i>
+									<h3>NodeJs</h3>
+									<p class="text-muted">Hagamos que nuestra información dure para toda la vida</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="cta" style="background-image:url('assets/img/bg-cta.jpg');">
+		<div class="cta-content">
+			<div class="container">
+				<h2 style="font-size:45px;">El momento de iniciar.
+					<br>¡Es ahora!</h2>
+				<a class="btn btn-outline-warning btn-xl js-scroll-trigger" role="button" href="#contact">Ir a tutoriales</a>
+			</div>
+		</div>
+		<div class="overlay"></div>
+	</section>
+	<section id="contact" class="contact bg-primary">
+		<div class="container">
+			<h2>
+				<span>Si</span>
+				<span>&nbsp;te gustan nuestros tutoriales, seguínos y recomendános</span>
+			</h2>
+			<ul class="list-inline list-social">
+				<li class="list-inline-item social-twitter">
+					<a href="#">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</li>
+				<li class="list-inline-item social-facebook">
+					<a href="#">
+						<i class="fa fa-facebook"></i>
+					</a>
+				</li>
+				<li class="list-inline-item social-google-plus">
+					<a href="#">
+						<i class="fa fa-google-plus"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+
+
 	</div>
-
-
-
-</div>

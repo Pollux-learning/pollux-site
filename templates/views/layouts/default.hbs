@@ -14,10 +14,19 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Pollux es la estrella más brillante de la constelación de Géminis. La dualidad de ésta constelación representa dos puntos de vista diferentes que congenian en una sola voluntad. Nosotros brindamos la información, vos brindás las ganas.">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Pollux</title>
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link href="/styles/site.min.css" rel="stylesheet"> {{!-- This file provides the default styling for the KeystoneJS Content Editor - only renders when user is logged in and
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> {{!--
+	<link href="/styles/site.min.css" rel="stylesheet"> --}}
+	<link rel="stylesheet" href="/styles/assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+	<link rel="stylesheet" href="/styles/assets/bootstrap/css/style.css"> {{!-- This file provides the default styling for the KeystoneJS Content Editor - only renders when user is logged in and
 	admin--}} {{{isAdminEditorCSS user}}} {{!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries //-
 	Safely remove this block if you are not targeting IE8 --}}
 	<!--[if lt IE 9]>
@@ -29,7 +38,7 @@
 
 <body>
 	<div id="header">
-		<div class="container">
+		{{!-- <div class="container">
 			<div role="navigation" class="navbar navbar-default">
 				<div class="container-fluid">
 					<div class="navbar-header">
@@ -63,7 +72,36 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> --}}
+		<nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+			<div class="container">
+				<a class="navbar-brand js-scroll-trigger" href="#page-top">Pollux</a>
+				<button class="navbar-toggler float-right" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+				 aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fa fa-bars"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="nav navbar-nav ml-auto">
+
+						<li class="nav-item" role="presentation">
+							<a class="nav-link js-scroll-trigger" href="/blog/">Tutoriales</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link js-scroll-trigger" href="#download">HTML</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link js-scroll-trigger" href="#features">CSS</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link js-scroll-trigger" href="#contact">JS</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link js-scroll-trigger" href="#contact">NODEJS</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</div>
 	<div id="body">
 		<!--
@@ -96,8 +134,12 @@
 	</div>
 	<div class="container">
 		<div id="footer">
-			<p>Powered by
-				<a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
+			<p>©&nbsp;Pollux 2018. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">FAQ</a></li>
+            </ul>
 		</div>
 	</div>
 	{{!-- //- jQuery 1.11.3 is included by default, and required by both Bootstrap //- and the KeystoneJS Content Editor. If
@@ -105,6 +147,10 @@
 	<script src="/js/jquery/jquery-1.11.3.min.js"></script> {{!-- //- Customise which Bootstrap javascript files are served by including //- them specifically here, instead of bootstrap-3.3.5.min.js
 	--}}
 	<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script> {{{isAdminEditorJS user}}}
+	{{!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="/styles/assets/js/new-age.js"></script>
 </body>
 
 </html>
