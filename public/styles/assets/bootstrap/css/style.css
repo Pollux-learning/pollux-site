@@ -20,10 +20,16 @@ header.masthead .header-content h1{
 
 .btn{
     background: #3D509D;
+    border-radius: 0%;
+    
 }
+.btn a{
+    color: #f1f2f6;
+}
+
 .btn:hover{
     background: #9B3A7D;
-    border-color: #3D509D
+    border-color: #f1f2f6;
 }
 .btn-outline-warning{
     border-color: #3D509D;
@@ -38,4 +44,14 @@ header.masthead .header-content h1{
 }
 #contact{
     color: #f1f2f6;
+}
+.card .card-title{
+    font-weight: bold;
+}
+
+.footer{
+    background: #000;
+    text-align: center;
+    color: #f1f2f6;
+    margin: 0;
 }
