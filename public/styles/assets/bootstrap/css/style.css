@@ -58,3 +58,6 @@ header.masthead .header-content h1{
     color: #f1f2f6;
     margin: 0;
 }
+.footer .list-inline{
+    margin-top: 0;
+}

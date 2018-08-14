@@ -26,7 +26,9 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
-	<link rel="stylesheet" href="/styles/assets/bootstrap/css/style.css"> {{!-- This file provides the default styling for the KeystoneJS Content Editor - only renders when user is logged in and
+	<link rel="stylesheet" href="/styles/assets/bootstrap/css/style.css">
+	<link rel="stylesheet" href="/styles/assets/bootstrap/css/card.css">
+	 {{!-- This file provides the default styling for the KeystoneJS Content Editor - only renders when user is logged in and
 	admin--}} {{{isAdminEditorCSS user}}} {{!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries //-
 	Safely remove this block if you are not targeting IE8 --}}
 	<!--[if lt IE 9]>
@@ -86,6 +88,14 @@
 						<li class="nav-item" role="presentation">
 							<a class="nav-link js-scroll-trigger" href="/blog/">Tutoriales</a>
 						</li>
+
+						{{# each data.categories }}
+						<li class="nav-item" role="presentation">
+							<a href="{{categoryUrl key}}" class="nav-link js-scroll-trigger">{{name}}</a>
+						</li>
+					
+					{{/each}}
+{{!-- 
 						<li class="nav-item" role="presentation">
 							<a class="nav-link js-scroll-trigger" href="#download">HTML</a>
 						</li>
@@ -97,7 +107,7 @@
 						</li>
 						<li class="nav-item" role="presentation">
 							<a class="nav-link js-scroll-trigger" href="#contact">NODEJS</a>
-						</li>
+						</li> --}}
 					</ul>
 				</div>
 			</div>
@@ -151,6 +161,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="/styles/assets/js/new-age.js"></script>
+	
 </body>
 
 </html>

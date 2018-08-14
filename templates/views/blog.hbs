@@ -1,52 +1,82 @@
 <div class="blog container">
-	<h1>Temas</h1>
-</div>
-<div class="container">
-	<div class="row">
-		<div class="col-sm-8 col-md-9">
-			{{!--
-			<h4 class="text-weight-normal">Showing {{ data.posts.results.length}} post.</h4> --}}
-			<div class="blog">
-				{{# each data.posts.results}}
-				<div class="card" style="width: 20rem;">
-					<img class="card-img-top" src="{{{cloudinaryUrl image width=160 height=160 crop='fit' }}}" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">{{{title}}}</h5>
-						<p class="lead text-muted card-text">{{{categoryList categories prefix="Posted in "}}} {{#if author.name.first}}por {{author.name.first}} {{author.name.last}}{{/if}}
-						</p>
-						{{#if content.extended}}
-						<p class="read-more btn btn-primary">
-							<a href="{{postUrl slug}}">Ver más...</a>
-						</p>{{/if}}
 
+</div>
+<div class="container-fluid">
+
+
+	<section class="card-section-imagia">
+
+	
+			
+				<h1>Tutoriales</h1>
+				<h2>Más recientes</h2>
+
+		
+
+		<div class="container-fluid">
+			<div class="row">
+				{{# each data.posts.results}}
+				<div class="col-sm-6 col-md-4">
+					<div class="card-container-imagia">
+						<div class="card-imagia">
+							<div class="front-imagia">
+								<div class="cover-imagia">
+									{{!--
+									<img src="{{{cloudinaryUrl image width=160 height=160 crop='fit' }}}" alt=""> --}}
+								</div>
+								<div class="user-imagia">
+									{{!--
+									<img class="img-circle" alt=""> --}}
+								</div>
+								<div class="content-imagia">
+									<h3 class="name-imagia">{{{title}}}</h3>
+									<p class="subtitle-imagia">{{{categoryList categories}}}</p>
+									<p class="text-center">
+										<em></em>
+									</p>
+								</div>
+								<div class="footer-imagia">
+									<span>
+										<a class="fa fa-plus" href="{{postUrl slug}}">Ver más...</a>
+									</span>
+								</div>
+							</div>
+							<div class="back-imagia">
+								<div class="content-imagia content-back-imagia">
+									<div>
+										<div class="row">
+											<h3 class="text-center mx-auto card-">{{{title}}}</h3>
+											<p class="text-center">{{{content.brief}}}</p>
+										</div>
+										<div class="row">
+											<a class="btn btn-outline-warning btn-xl js-scroll-trigger mx-auto" role="button" href="{{postUrl slug}}">Ver más</a>
+										</div>
+
+
+									</div>
+								</div>
+								<div class="footer-imagia">
+									<div class="social-imagia text-center">
+										<a href="#">
+											<i class="fab fa-facebook"></i>
+										</a>
+										<a href="#">
+											<i class="fab fa-linkedin"></i>
+										</a>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				{{!--
-				<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="post">
-					<h2>
-						<a href="{{postUrl slug}}">{{{title}}}</a>
-					</h2>
-					<p class="lead text-muted">{{{categoryList categories prefix="Posted in "}}} {{#if author.name.first}}por {{author.name.first}} {{author.name.last}}{{/if}}
-					</p>
-					{{#if image}}
-					<img src="{{{cloudinaryUrl image width=160 height=160 crop='fit' }}}" class="img pull-right">{{/if}}
-					<p>{{{content.brief}}}</p>
-					{{#if content.extended}}
-					<p class="read-more">
-						<a href="{{postUrl slug}}">Ver más...</a>
-					</p>{{/if}}
-				</div> --}} {{/each}}
-			</div>
-		</div>
-		<div class="col-sm-4 col-md-3">
-			<h2>Categorías</h2>
-			<div style="margin-top: 70px;" class="list-group">
-				<a href="/blog" class="active list-group-item">Todas las categorías</a>
-				{{# each data.categories }}
-				<a href="{{categoryUrl key}}" class="false list-group-item">{{name}}</a>
 				{{/each}}
+
 			</div>
-		</div>
-	</div>
+	</section>
+
+
 	{{>pagination}}
-</div>
+	</div>
